@@ -1,0 +1,6 @@
+.idea.*
+*.cpython-36.pyc
+.idea/dataSources.local.xml
+.idea/workspace.xml
+static/image/.*
+db.sqlite3
