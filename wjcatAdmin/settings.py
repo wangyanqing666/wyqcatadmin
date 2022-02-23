@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
-import os
+import os,sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -78,9 +78,17 @@ WSGI_APPLICATION = 'wjcatAdmin.wsgi.application'
 
 import pymysql
 pymysql.install_as_MySQLdb()
-
-DATABASES = {
-    'default': {
+if sys.platform in 'linux':
+    default={
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dbname',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': '101.43.196.252',
+        'PORT': '3306',
+    }
+else:
+    default = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'dbname',
         'USER': 'root',
@@ -88,6 +96,9 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
+
+DATABASES = {
+    'default': default
 }
 
 
