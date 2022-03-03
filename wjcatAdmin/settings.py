@@ -56,7 +56,8 @@ ROOT_URLCONF = 'wjcatAdmin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['myAdmin/dist']
+        # 'DIRS': ['myAdmin/dist']
+        'DIRS': ['static/dist/index.html']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
