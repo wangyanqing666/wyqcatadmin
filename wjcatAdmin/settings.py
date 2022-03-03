@@ -165,7 +165,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
 # os.path.join(BASE_DIR, "myAdmin/dist/static"),
-os.path.join(BASE_DIR, "static"),
+os.path.join(BASE_DIR, "static/dist/static"),
 ]
 
 # STATIC_ROOT='myAdmin/dist/static'
