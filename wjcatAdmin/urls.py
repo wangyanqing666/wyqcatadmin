@@ -19,7 +19,6 @@ urlpatterns = [
     url(r'home/', TemplateView.as_view(template_name="index.html")),
     url(r'^$', TemplateView.as_view(template_name="index.html")),
     url(r'index/', TemplateView.as_view(template_name="index.html")),
-    # url(r'index/', views.index),
     url(r'login/', TemplateView.as_view(template_name="index.html")),
     url(r'register/', TemplateView.as_view(template_name="index.html")),
     url(r'resetpass/', TemplateView.as_view(template_name="index.html")),
