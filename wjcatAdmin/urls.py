@@ -9,6 +9,9 @@ from myAdmin import designView,answerView
 from django.views.generic import TemplateView
 from django.conf.urls.static import static
 from django.conf import settings
+
+from myAdmin import  views
+
 urlpatterns = [
     url(r'admin/', admin.site.urls),
     url('^api/design',designView.opera),#问卷设计者操作
@@ -16,6 +19,7 @@ urlpatterns = [
     url(r'home/', TemplateView.as_view(template_name="index.html")),
     url(r'^$', TemplateView.as_view(template_name="index.html")),
     url(r'index/', TemplateView.as_view(template_name="index.html")),
+    # url(r'index/', views.index),
     url(r'login/', TemplateView.as_view(template_name="index.html")),
     url(r'register/', TemplateView.as_view(template_name="index.html")),
     url(r'resetpass/', TemplateView.as_view(template_name="index.html")),
