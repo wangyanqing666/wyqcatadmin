@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         # 'DIRS': ['myAdmin/dist']
-        'DIRS': ['static/dist/index.html']
+        'DIRS': ['static/dist']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
