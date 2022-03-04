@@ -56,8 +56,9 @@ ROOT_URLCONF = 'wjcatAdmin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # 'DIRS': ['myAdmin/dist']
-        'DIRS': ['static/dist']
+        # 'DIRS': ['myAdmin/static/dist']
+        'DIRS': ['myAdmin/dist']
+
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -164,8 +165,8 @@ SIMPLEUI_ANALYSIS = False
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-# os.path.join(BASE_DIR, "myAdmin/dist/static"),
-os.path.join(BASE_DIR, "static/dist/static"),
+# os.path.join(BASE_DIR, "common_static"),
+os.path.join(BASE_DIR, "myAdmin/dist/static"),
 ]
 
 # STATIC_ROOT='myAdmin/dist/static'
