@@ -169,4 +169,4 @@ STATICFILES_DIRS = [
 os.path.join(BASE_DIR, "myAdmin/dist/static"),
 ]
 
-# STATIC_ROOT='myAdmin/dist/static'
+STATIC_ROOT='myAdmin/dist/static'
